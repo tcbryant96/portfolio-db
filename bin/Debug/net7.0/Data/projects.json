@@ -1,13 +1,32 @@
 [
-    {
-      "Title": "Project One",
-      "Description": "Description of Project One",
-      "Url": "https://github.com/yourusername/project-one"
-    },
-    {
-      "Title": "Project Two",
-      "Description": "Description of Project Two",
-      "Url": "https://github.com/yourusername/project-two"
-    }
-  ]
-  
+  {
+      "Title": "Project A",
+      "TechnologiesUsed": ["C#", ".NET 7", "GraphQL"],
+      "DateCreated": "2024-01-15T00:00:00Z",
+      "TaskDescriptions": [
+          {
+              "TaskName": "Initial Setup",
+              "Description": "Set up the project structure and initial configuration."
+          },
+          {
+              "TaskName": "GraphQL Integration",
+              "Description": "Integrated GraphQL for querying project data."
+          }
+      ]
+  },
+  {
+      "Title": "Project B",
+      "TechnologiesUsed": ["JavaScript", "Vue.js", "Node.js"],
+      "DateCreated": "2024-02-20T00:00:00Z",
+      "TaskDescriptions": [
+          {
+              "TaskName": "Frontend Development",
+              "Description": "Developed the frontend using Vue.js."
+          },
+          {
+              "TaskName": "Backend API",
+              "Description": "Created RESTful APIs with Node.js."
+          }
+      ]
+  }
+]
