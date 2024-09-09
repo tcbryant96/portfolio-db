@@ -1,5 +1,6 @@
 C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\appsettings.json
+C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\Data\navigation.json
 C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\Data\projects.json
 C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\PortfolioBackend.exe
 C:\Users\trevor\OneDrive\Documents\PROJECTS\PortfolioV2\PortfolioBackend\bin\Debug\net7.0\PortfolioBackend.deps.json

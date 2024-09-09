@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddScoped<IProjectService, ProjectService>();
+builder.Services.AddScoped<INavigationService, NavigationService>();
 
 // Add GraphQL services
 builder.Services
@@ -20,9 +21,18 @@ app.Run();
 
 public class Query
 {
-    public List<Project> GetProjects([Service] IProjectService projectService)
+    private readonly IProjectService _projectService;
+    private readonly INavigationService _navigationService;
+
+    public Query(IProjectService projectService, INavigationService navigationService)
     {
-        return projectService.GetProjects();
+        _projectService = projectService;
+        _navigationService = navigationService;
     }
+
+    public List<Project> GetProjects() => _projectService.GetProjects();
+
+    public List<NavigationLink> GetNavigationLinks() => _navigationService.GetNavigationLinks();
 }
+
 

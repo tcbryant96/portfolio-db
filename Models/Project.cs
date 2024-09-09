@@ -2,15 +2,14 @@ namespace PortfolioBackend.Models
 {
     public class Project
     {
-        public string Title { get; set; } // Title of the project
-        public List<string> TechnologiesUsed { get; set; } // List of technologies used in the project
-        public DateTime DateCreated { get; set; } // Date when the project was created
-        public List<TaskDescription> TaskDescriptions { get; set; } // List of descriptions for each task accomplished
+        public string Title { get; set; }
+        public List<string> TechnologiesUsed { get; set; }
+        public DateTime DateCreated { get; set; }
+        public List<TaskDescription> TaskDescriptions { get; set; }
 
-        // Constructor to initialize lists
         public Project()
         {
-            Title = string.Empty; // Initialize non-nullable property
+            Title = string.Empty;
             TechnologiesUsed = new List<string>();
             TaskDescriptions = new List<TaskDescription>();
         }
@@ -18,10 +17,9 @@ namespace PortfolioBackend.Models
 
     public class TaskDescription
     {
-        public string TaskName { get; set; } // Name of the task
-        public string Description { get; set; } // Description of the task
+        public string TaskName { get; set; }
+        public string Description { get; set; }
 
-        // Constructor to initialize properties
         public TaskDescription()
         {
             TaskName = string.Empty;
