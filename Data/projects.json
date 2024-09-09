@@ -1,6 +1,7 @@
 [
   {
       "Title": "Project A",
+      "Url": "https://example.com",
       "TechnologiesUsed": ["C#", ".NET 7", "GraphQL"],
       "DateCreated": "2024-01-15T00:00:00Z",
       "TaskDescriptions": [
@@ -16,6 +17,7 @@
   },
   {
       "Title": "Project B",
+      "Url": "https://example.com",
       "TechnologiesUsed": ["JavaScript", "Vue.js", "Node.js"],
       "DateCreated": "2024-02-20T00:00:00Z",
       "TaskDescriptions": [

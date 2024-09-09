@@ -3,6 +3,7 @@ namespace PortfolioBackend.Models
     public class Project
     {
         public string Title { get; set; }
+        public string Url { get; set; }
         public List<string> TechnologiesUsed { get; set; }
         public DateTime DateCreated { get; set; }
         public List<TaskDescription> TaskDescriptions { get; set; }
