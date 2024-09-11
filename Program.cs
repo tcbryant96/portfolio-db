@@ -3,6 +3,18 @@ using PortfolioBackend.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Define a CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:8080")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 // Add services to the container
 builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddScoped<INavigationService, NavigationService>();
@@ -14,6 +26,9 @@ builder.Services
     .AddQueryType<Query>();
 
 var app = builder.Build();
+
+// Use CORS middleware
+app.UseCors("AllowSpecificOrigins");
 
 // Map GraphQL endpoint
 app.MapGraphQL("/graphql");
@@ -37,6 +52,3 @@ public class Query
     public List<NavigationLink> GetNavigationLinks() => _navigationService.GetNavigationLinks();
     public Profile GetProfile() => _profileService.GetProfile();
 }
-
-
-
